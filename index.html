@@ -293,7 +293,17 @@
   </main>
   <footer><p>✦ <span class="lang-en">15–16 November 2026 · Swarna Mahal, Chengapalli</span><span class="lang-ta">15–16 நவம்பர் 2026 · ஸ்வர்ணா மஹால், செங்கப்பள்ளி</span> ✦</p><small>Made with love for our families</small></footer>
   <div class="music-player">
-    <button id="music-toggle" type="button" aria-pressed="false" aria-label="Play original soft Tamil wedding-inspired instrumental music"><span class="music-icon" aria-hidden="true">♫</span><span class="music-copy"><span class="lang-en"><span class="when-paused">Play wedding melody</span><span class="when-playing">Pause melody</span></span><span class="lang-ta"><span class="when-paused">திருமண இசை கேட்க</span><span class="when-playing">இசையை நிறுத்து</span></span></span><span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span></button>
+    <button id="music-toggle" type="button" aria-pressed="false" aria-label="Tap the Tamil wedding instruments to play music">
+      <span class="music-art-wrap" aria-hidden="true">
+        <img class="music-art" src="nadaswaram-thavil.webp" alt="" width="640" height="640">
+        <span class="music-state-symbol"><span class="when-paused">▶</span><span class="when-playing">Ⅱ</span></span>
+      </span>
+      <span class="music-copy">
+        <span class="lang-en"><span class="when-paused">Tap to play music</span><span class="when-playing">Tap to pause music</span></span>
+        <span class="lang-ta"><span class="when-paused">இசையைக் கேட்கத் தொடவும்</span><span class="when-playing">இசையை நிறுத்தத் தொடவும்</span></span>
+      </span>
+      <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
     <audio id="wedding-melody" src="wedding-melody.mp3" loop preload="none"></audio>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>

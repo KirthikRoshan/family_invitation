@@ -77,8 +77,8 @@
       musicToggle.classList.toggle('playing', isPlaying);
       musicToggle.setAttribute('aria-pressed', String(isPlaying));
       musicToggle.setAttribute('aria-label', isTamil
-        ? (isPlaying ? 'திருமண இசையை நிறுத்து' : 'மென்மையான திருமண இசையைக் கேட்க')
-        : (isPlaying ? 'Pause soft wedding melody' : 'Play original soft wedding melody'));
+        ? (isPlaying ? 'திருமண இசையை நிறுத்தத் தொடவும்' : 'திருமண இசையைக் கேட்கத் தொடவும்')
+        : (isPlaying ? 'Tap to pause wedding music' : 'Tap to play wedding music'));
     };
 
     musicToggle.addEventListener('click', async () => {

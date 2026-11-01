@@ -150,3 +150,16 @@ html[lang=ta] .music-player button{font-family:var(--tamil)}
 }
 @media(prefers-reduced-motion:reduce){.floating-sparkle,.music-player button.playing .music-bars i{animation:none!important}.story-picture:hover,.story-picture:hover img{transform:none}}
 @media print{.music-player{display:none!important}.illustrated-story{padding:9mm 0}.story-gallery{gap:8mm}.story-picture{box-shadow:none;break-inside:avoid}.story-picture figcaption{padding:4mm}.story-image-frame img{max-height:80mm}}
+
+/* Illustrated Tamil wedding-instrument music button. */
+.music-player button{gap:10px;padding:6px 15px 6px 6px;max-width:calc(100vw - 24px);min-height:77px;border-color:#c49c5b;background:#fff8edfa;box-shadow:0 8px 26px #441b2438}
+.music-art-wrap{position:relative;display:grid;place-items:center;flex:none;width:75px;height:65px;border-radius:50%;background:radial-gradient(circle,#fff9e7 35%,#f2d6a8 100%);box-shadow:inset 0 0 0 1px #d1ad72;overflow:visible}
+.music-art{width:77px;height:77px;object-fit:contain;display:block;filter:drop-shadow(0 3px 2px #69381733);transform-origin:50% 55%;transition:transform .3s ease}
+.music-player button:hover .music-art{transform:rotate(-4deg) scale(1.08)}
+.music-state-symbol{position:absolute;right:-2px;bottom:0;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;border:2px solid #fff9eb;background:var(--wine);color:#fff3da;font:700 11px var(--sans);box-shadow:0 2px 8px #441b2438}
+.music-copy{display:block;text-align:left;font:700 12px/1.4 var(--sans);letter-spacing:0;max-width:180px}
+.music-player button.playing{background:#fff2d8;border-color:#b78332;box-shadow:0 8px 28px #441b2438,0 0 0 3px #d7b46b47}
+.music-player button.playing .music-art{animation:instrument-dance 2.5s ease-in-out infinite}
+@keyframes instrument-dance{0%,100%{transform:rotate(-3deg) scale(1.02)}50%{transform:rotate(3deg) scale(1.08)}}
+@media(max-width:680px){.music-player button{padding:5px 10px 5px 5px;gap:7px;min-height:68px}.music-art-wrap{width:64px;height:57px}.music-art{width:66px;height:66px}.music-state-symbol{width:21px;height:21px;font-size:10px}.music-copy{font-size:10px;max-width:145px}.music-bars{margin-left:0}}
+@media(prefers-reduced-motion:reduce){.music-player button.playing .music-art{animation:none}}
