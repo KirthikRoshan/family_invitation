@@ -125,5 +125,28 @@ html[lang=ta] .scan-card>span{font-family:var(--tamil)}
 html[lang=ta] .story-picture figcaption strong,html[lang=ta] .story-picture figcaption,html[lang=ta] .illustrated-story .section-lead{font-family:var(--tamil)}
 html[lang=ta] .music-player button{font-family:var(--tamil)}
 @media(max-width:680px){.illustrated-story{padding-top:74px;padding-bottom:74px}.story-gallery{grid-template-columns:1fr;gap:25px;max-width:470px}.story-picture figcaption{padding:22px 22px 27px}.story-picture figcaption strong{font-size:31px}.music-player{left:12px;bottom:max(12px,env(safe-area-inset-bottom))}.music-player button{font-size:10px;padding:8px 12px 8px 8px;gap:6px}.music-player .music-icon{height:27px;width:27px}.wishes-list li{padding-left:27px}.wishes-list li::before{top:15px}}
+
+/* Qualifications below each person's name */
+.name-degree {
+  display: block;
+  margin-top: 12px;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  color: var(--muted);
+  text-align: center;
+  white-space: normal;
+}
+
+/* Mobile adjustments */
+@media (max-width: 590px) {
+  .name-degree {
+    font-size: 12px;
+    margin-top: 8px;
+    letter-spacing: 1px;
+  }
+}
 @media(prefers-reduced-motion:reduce){.floating-sparkle,.music-player button.playing .music-bars i{animation:none!important}.story-picture:hover,.story-picture:hover img{transform:none}}
 @media print{.music-player{display:none!important}.illustrated-story{padding:9mm 0}.story-gallery{gap:8mm}.story-picture{box-shadow:none;break-inside:avoid}.story-picture figcaption{padding:4mm}.story-image-frame img{max-height:80mm}}
